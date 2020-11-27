@@ -1,0 +1,25 @@
+syntax = "proto3";       
+                        
+package proto;    
+option go_package = "github.com/marmotedu/gopractise-demo/protobuf/user";    
+                                          
+//go:generate protoc -I. --experimental_allow_proto3_optional --go_out=plugins=grpc:.    
+
+service User {
+  rpc GetUser(GetUserRequest) returns (GetUserResponse) {}
+}
+
+message GetUserRequest {
+  string class = 1;
+  optional string username = 2;
+  optional string user_id = 3;
+}
+
+message GetUserResponse {
+  string class = 1;
+  string user_id = 2;
+  string username = 3;
+  string address = 4;
+  string sex = 5;
+  string phone = 6;
+}

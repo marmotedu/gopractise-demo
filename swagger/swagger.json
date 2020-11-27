@@ -1,0 +1,205 @@
+{
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "Documentation of our awesome API.\nSchemes:\nhttp\nhttps",
+    "title": "awesome.",
+    "version": "0.1.0"
+  },
+  "host": "some-url.com",
+  "basePath": "/",
+  "paths": {
+    "/users": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Create a user in memory.",
+        "operationId": "createUserRequest",
+        "parameters": [
+          {
+            "description": "This text will appear as description of your request body.",
+            "name": "Body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/createUserResponse"
+          },
+          "default": {
+            "$ref": "#/responses/errResponse"
+          }
+        }
+      }
+    },
+    "/users/{name}": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Get a user from memory.",
+        "operationId": "getUserRequest",
+        "parameters": [
+          {
+            "type": "string",
+            "x-go-name": "Name",
+            "name": "name",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "name": "Name",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/getUserResponse"
+          },
+          "default": {
+            "$ref": "#/responses/errResponse"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "User": {
+      "type": "object",
+      "title": "User represents body of User request and response.",
+      "required": [
+        "name",
+        "nickname"
+      ],
+      "properties": {
+        "address": {
+          "description": "User's address.",
+          "type": "string",
+          "x-go-name": "Address"
+        },
+        "email": {
+          "description": "User's email.",
+          "type": "string",
+          "x-go-name": "Email"
+        },
+        "name": {
+          "description": "User's name.",
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "nickname": {
+          "description": "User's nickname.",
+          "type": "string",
+          "x-go-name": "Nickname"
+        }
+      },
+      "x-go-package": "github.com/marmotedu/gopractise-demo/swagger/api"
+    }
+  },
+  "responses": {
+    "createUserRequestDefault": {
+      "description": "CreateUserRequestDefault This text will appear as description of your error response body.",
+      "headers": {
+        "_statusCode": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Error code."
+        },
+        "message": {
+          "type": "string",
+          "description": "Error message."
+        }
+      }
+    },
+    "createUserRequestOK": {
+      "description": "CreateUserRequestOK This text will appear as description of your response body.",
+      "schema": {
+        "$ref": "#/definitions/User"
+      },
+      "headers": {
+        "body": {
+          "description": "In: Body"
+        }
+      }
+    },
+    "createUserResponse": {
+      "description": "This text will appear as description of your response body.",
+      "schema": {
+        "$ref": "#/definitions/User"
+      }
+    },
+    "errResponse": {
+      "description": "This text will appear as description of your error response body.",
+      "headers": {
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Error code."
+        },
+        "message": {
+          "type": "string",
+          "description": "Error message."
+        }
+      }
+    },
+    "getUserRequestDefault": {
+      "description": "GetUserRequestDefault This text will appear as description of your error response body.",
+      "headers": {
+        "_statusCode": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Error code."
+        },
+        "message": {
+          "type": "string",
+          "description": "Error message."
+        }
+      }
+    },
+    "getUserRequestOK": {
+      "description": "GetUserRequestOK This text will appear as description of your response body.",
+      "schema": {
+        "$ref": "#/definitions/User"
+      },
+      "headers": {
+        "body": {
+          "description": "In: Body"
+        }
+      }
+    },
+    "getUserResponse": {
+      "description": "This text will appear as description of your response body.",
+      "schema": {
+        "$ref": "#/definitions/User"
+      }
+    }
+  },
+  "securityDefinitions": {
+    "basic": {
+      "type": "basic"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+basePath: /
+consumes:
+- application/json
+definitions:
+  User:
+    properties:
+      email:
+        description: User's email.
+        type: string
+        x-go-name: Email
+      name:
+        description: User's name.
+        type: string
+        x-go-name: Name
+      nickname:
+        description: User's nickname.
+        type: string
+        x-go-name: Nickname
+    required:
+    - name
+    - nickname
+    title: User represents body of User request and response.
+    type: object
+    x-go-package: github.com/marmotedu/gopractise-demo/swagger/api
+host: some-url.com
+info:
+  description: Documentation of our awesome API.
+  title: awesome.
+  version: 0.1.0
+paths:
+  /users:
+    post:
+      operationId: createUserRequest
+      parameters:
+      - description: This text will appear as description of your request body.
+        in: body
+        name: Body
+        schema:
+          $ref: '#/definitions/User'
+      responses:
+        "200":
+          $ref: '#/responses/createUserResponse'
+        default:
+          $ref: '#/responses/errResponse'
+      summary: Create a user in memory.
+      tags:
+      - user
+  /users/{name}:
+    get:
+      operationId: getUserRequest
+      parameters:
+      - in: path
+        name: name
+        required: true
+        type: string
+        x-go-name: Name
+      responses:
+        "200":
+          $ref: '#/responses/getUserResponse'
+        default:
+          $ref: '#/responses/errResponse'
+      summary: Get a user from memory.
+      tags:
+      - user
+produces:
+- application/json
+responses:
+  createUserResponse:
+    description: This text will appear as description of your response body.
+    schema:
+      $ref: '#/definitions/User'
+  errResponse:
+    description: This text will appear as description of your error response body.
+    headers:
+      code:
+        description: Error code.
+        format: int64
+        type: integer
+      message:
+        description: Error message.
+        type: string
+  getUserResponse:
+    description: This text will appear as description of your response body.
+    schema:
+      $ref: '#/definitions/User'
+schemes:
+- http
+- https
+securityDefinitions:
+  basic:
+    type: basic
+swagger: "2.0"

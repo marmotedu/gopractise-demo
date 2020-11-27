@@ -24,3 +24,8 @@ func Min(x, y float64) float64 {
 func RandInt() int {
 	return rand.Int()
 }
+
+// Floor returns the greatest integer value less than or equal to x.
+func Floor(x float64) float64 {
+	return math.Floor(x)
+}

@@ -1,0 +1,13 @@
+consumes:
+- application/json
+info:
+  description: Identity and Access Management system swagger api document
+  title: Identity and Access Management system
+  version: 0.1.0
+paths: {}
+produces:
+- application/json
+schemes:
+- http
+- https
+swagger: "2.0"
