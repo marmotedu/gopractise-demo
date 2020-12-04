@@ -1,0 +1,10 @@
+{"level":"INFO","time":"2020-11-30T21:49:16+08:00","message":"custom log with json formatter"}
+{"level":"INFO","time":"2020-11-30T21:49:27+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/main.go:27","func":"main.main","message":"custom log with json formatter"}
+{"level":"INFO","time":"2020-11-30T21:49:34+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/main.go:26","func":"main.main","message":"custom log with json formatter"}
+{"level":"INFO","time":"2020-11-30T21:49:35+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/main.go:26","func":"main.main","message":"custom log with json formatter"}
+{"time":"2020-12-01T06:57:52+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/main.go:26","func":"main.main","message":"custom log with json formatter","level":"INFO"}
+{"file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/main2.go:28","func":"main.main","message":"custom log with json formatter","level":"INFO","time":"2020-12-02T01:13:28+08:00"}
+{"level":"INFO","time":"2020-12-02T01:15:26+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/example.go:28","func":"main.main","message":"custom log with json formatter"}
+{"level":"INFO","time":"2020-12-02T01:16:18+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/example.go:29","func":"main.main","message":"custom log with json formatter"}
+{"time":"2020-12-04T09:10:54+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/main.go:26","func":"main.main","message":"custom log with json formatter","level":"INFO"}
+{"func":"main.main","message":"custom log with json formatter","level":"INFO","time":"2020-12-04T09:10:56+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/example.go:29"}
