@@ -14,9 +14,11 @@ require (
 	github.com/go-openapi/validate v0.19.11
 	github.com/golang/protobuf v1.4.3
 	github.com/jessevdk/go-flags v1.4.0
+	github.com/json-iterator/go v1.1.9
 	github.com/pdrum/swagger-automation v0.0.0-20190629163613-c8c7c80ba858
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/stretchr/testify v1.6.1
+	go.uber.org/zap v1.16.0 // indirect
 	golang.org/x/net v0.0.0-20200822124328-c89045814202
 	golang.org/x/tools v0.0.0-20201005185003-576e169c3de7 // indirect
 	google.golang.org/grpc v1.33.0

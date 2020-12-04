@@ -1,0 +1,10 @@
+Log file created at: 2020/12/02 09:49:54
+Running on machine: colin
+Binary: Built with gc go1.15.1 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1202 09:49:54.236713   28369 main.go:14] This is info message
+I1202 09:49:54.236914   28369 main.go:15] This is info message: 12345
+W1202 09:49:54.236924   28369 main.go:17] This is warning message
+W1202 09:49:54.236968   28369 main.go:18] This is warning message: 12345
+E1202 09:49:54.236977   28369 main.go:20] This is error message
+E1202 09:49:54.237171   28369 main.go:21] This is error message: 12345

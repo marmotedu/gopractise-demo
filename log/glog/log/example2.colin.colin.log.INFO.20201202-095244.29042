@@ -1,0 +1,6 @@
+Log file created at: 2020/12/02 09:52:44
+Running on machine: colin
+Binary: Built with gc go1.15.1 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1202 09:52:44.163989   29042 example2.go:13] LEVEL 3 message
+I1202 09:52:44.164335   29042 example2.go:14] LEVEL 5 message

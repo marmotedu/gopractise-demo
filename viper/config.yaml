@@ -1,0 +1,8 @@
+apiVersion: v1
+max-retries: 7
+server:
+  address: http://127.0.0.1:80
+  timeout: 10s
+user:
+  password: Admin@2020
+  username: admin

@@ -1,0 +1,17 @@
+Log file created at: 2020/12/02 10:12:32
+Running on machine: colin
+Binary: Built with gc go1.15.1 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1202 10:12:32.995956    1268 example3.go:13] This is info message
+I1202 10:12:32.996184    1268 example3.go:14] This is info message: 123
+goroutine 1 [running]:
+github.com/golang/glog.stacks(0x5a3900, 0x587987, 0xb, 0xe)
+	/home/colin/workspace/golang/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:769 +0xb9
+github.com/golang/glog.(*loggingT).output(0x5a38c0, 0xc000000000, 0xc000086000, 0x587987, 0xb, 0xe, 0x0)
+	/home/colin/workspace/golang/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:675 +0x67d
+github.com/golang/glog.(*loggingT).printf(0x5a38c0, 0xc000000000, 0x4f08f7, 0x18, 0xc00008ff50, 0x1, 0x1)
+	/home/colin/workspace/golang/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:655 +0x153
+github.com/golang/glog.Infof(...)
+	/home/colin/workspace/golang/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:1073
+main.main()
+	/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/glog/example3.go:14 +0x165
