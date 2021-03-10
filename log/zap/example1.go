@@ -22,5 +22,5 @@ func main() {
 		"attempt", 3,
 		"backoff", time.Second,
 	)
-	sugar.Infof("Failed to fetch URL: %s", url)
+	sugar.Infof("failed to fetch URL: %s", url)
 }

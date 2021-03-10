@@ -1,1 +1,8 @@
-example1.colin.colin.log.WARNING.20201202-094349.26223
+Log file created at: 2020/12/02 09:43:49
+Running on machine: colin
+Binary: Built with gc go1.15.1 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1202 09:43:49.618792   26223 example1.go:17] This is warning message
+W1202 09:43:49.618830   26223 example1.go:18] This is warning message: 123
+E1202 09:43:49.618840   26223 example1.go:20] This is error message
+E1202 09:43:49.618877   26223 example1.go:21] This is error message: 123

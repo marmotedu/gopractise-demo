@@ -8,3 +8,4 @@
 {"level":"INFO","time":"2020-12-02T01:16:18+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/example.go:29","func":"main.main","message":"custom log with json formatter"}
 {"time":"2020-12-04T09:10:54+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/main.go:26","func":"main.main","message":"custom log with json formatter","level":"INFO"}
 {"func":"main.main","message":"custom log with json formatter","level":"INFO","time":"2020-12-04T09:10:56+08:00","file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/example.go:29"}
+{"file":"/home/colin/workspace/golang/src/github.com/marmotedu/gopractise-demo/log/cuslog/example/example.go:29","func":"main.main","message":"custom log with json formatter","level":"INFO","time":"2020-12-04T10:32:12+08:00"}
