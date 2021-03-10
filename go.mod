@@ -4,6 +4,7 @@ go 1.15
 
 require (
 	github.com/cweill/gotests v1.5.3 // indirect
+	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-openapi/errors v0.19.7
 	github.com/go-openapi/loads v0.19.5
@@ -16,8 +17,11 @@ require (
 	github.com/golang/protobuf v1.4.3
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/json-iterator/go v1.1.9
+	github.com/mitchellh/go-homedir v1.1.0
 	github.com/pdrum/swagger-automation v0.0.0-20190629163613-c8c7c80ba858
+	github.com/spf13/cobra v1.1.3
 	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/viper v1.7.1
 	github.com/stretchr/testify v1.6.1
 	go.uber.org/zap v1.16.0 // indirect
 	golang.org/x/net v0.0.0-20200822124328-c89045814202

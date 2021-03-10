@@ -1,12 +1,12 @@
 apiversion: v1
-config: config.yaml
+config: ""
 help: false
 max-retries: 7
 mr: 7
 server:
   address: http://127.0.0.1:80
   timeout: 10s
-token: xxx.xxx.xxx
+token: ""
 user:
   password: Admin@2020
   secret-id: QLdywI2MrmDVjSSv6e95weNRvmteRjfKAuNV
