@@ -11,7 +11,7 @@
   ],
   "swagger": "2.0",
   "info": {
-    "description": "Documentation of our awesome API.\nSchemes:\nhttp\nhttps",
+    "description": "Documentation of our awesome API.",
     "title": "awesome.",
     "version": "0.1.0"
   },
@@ -57,12 +57,6 @@
             "type": "string",
             "x-go-name": "Name",
             "name": "name",
-            "in": "path",
-            "required": true
-          },
-          {
-            "type": "string",
-            "name": "Name",
             "in": "path",
             "required": true
           }
@@ -112,35 +106,6 @@
     }
   },
   "responses": {
-    "createUserRequestDefault": {
-      "description": "CreateUserRequestDefault This text will appear as description of your error response body.",
-      "headers": {
-        "_statusCode": {
-          "type": "integer",
-          "format": "int64"
-        },
-        "code": {
-          "type": "integer",
-          "format": "int64",
-          "description": "Error code."
-        },
-        "message": {
-          "type": "string",
-          "description": "Error message."
-        }
-      }
-    },
-    "createUserRequestOK": {
-      "description": "CreateUserRequestOK This text will appear as description of your response body.",
-      "schema": {
-        "$ref": "#/definitions/User"
-      },
-      "headers": {
-        "body": {
-          "description": "In: Body"
-        }
-      }
-    },
     "createUserResponse": {
       "description": "This text will appear as description of your response body.",
       "schema": {
@@ -158,35 +123,6 @@
         "message": {
           "type": "string",
           "description": "Error message."
-        }
-      }
-    },
-    "getUserRequestDefault": {
-      "description": "GetUserRequestDefault This text will appear as description of your error response body.",
-      "headers": {
-        "_statusCode": {
-          "type": "integer",
-          "format": "int64"
-        },
-        "code": {
-          "type": "integer",
-          "format": "int64",
-          "description": "Error code."
-        },
-        "message": {
-          "type": "string",
-          "description": "Error message."
-        }
-      }
-    },
-    "getUserRequestOK": {
-      "description": "GetUserRequestOK This text will appear as description of your response body.",
-      "schema": {
-        "$ref": "#/definitions/User"
-      },
-      "headers": {
-        "body": {
-          "description": "In: Body"
         }
       }
     },
