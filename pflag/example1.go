@@ -49,6 +49,7 @@ func main() {
 	// 定义命令行参数，并将标志的值绑定到变量
 	pflag.StringVar(&host, "host", "127.0.0.1", "MySQL service host address.")
 	pflag.IntVarP(&port, "port", "P", 3306, "MySQL service host port.")
+	pflag.CommandLine.MarkShorthandDeprecated("port", "please use --port only")
 
 	// 设置标准化参数名称的函数
 	pflag.CommandLine.SetNormalizeFunc(wordSepNomalizeFunc)
