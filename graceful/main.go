@@ -30,7 +30,7 @@ func main() {
 		}
 	}()
 
-	quit := make(chan os.Signal)
+	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, os.Interrupt)
 	<-quit // 阻塞等待接收channel数据
 	log.Println("Shutdown Server ...")
