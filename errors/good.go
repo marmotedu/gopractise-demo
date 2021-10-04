@@ -8,7 +8,7 @@ import (
 
 func main() {
 	if err := funcA(); err != nil {
-		log.Fatalf("call func got failed: %s", err)
+		log.Fatalf("call func got failed: %+v", err)
 		return
 	}
 
