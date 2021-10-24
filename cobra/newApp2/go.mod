@@ -1,4 +1,4 @@
-module github.com/marmotedu/iamdemo/cobra/newApp2
+module github.com/marmotedu/gopractise-demo/cobra/newApp2
 
 go 1.14
 

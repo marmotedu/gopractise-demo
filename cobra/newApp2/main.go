@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/marmotedu/iamdemo/cobra/newApp2/cmd"
+	"github.com/marmotedu/gopractise-demo/cobra/newApp2/cmd"
 )
 
 func main() {

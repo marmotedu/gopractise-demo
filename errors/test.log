@@ -1,6 +1,0 @@
-2021-07-03 14:34:39.649	[31mERROR[0m	errors/errortrack_log.go:39	Database error
-2021-07-03 14:34:49.692	[31mERROR[0m	errors/errortrack_log.go:40	Database error
-2021-07-03 14:36:32.658	[31mERROR[0m	errors/errortrack_log.go:40	Database error
-2021-07-03 14:37:31.597	[31mERROR[0m	errors/errortrack_log.go:41	Database error
-2021-07-03 14:38:43.239	[31mERROR[0m	Database error
-2021-07-03 14:38:47.948	[31mERROR[0m	errors/errortrack_log.go:41	Database error
